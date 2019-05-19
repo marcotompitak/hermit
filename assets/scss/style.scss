@@ -30,7 +30,7 @@ button,
 input,
 select,
 textarea {
-  color: $text;
+  color: #000;
   font-family: $fonts;
 }
 
@@ -135,6 +135,18 @@ table {
 .thin {
   max-width: 720px;
   margin: auto;
+  padding: 10px;
+  background: #FFF;
+  color: #000;
+  text-align: justify;
+}
+
+article.thin, #comments.thin, .post-nav.thin {
+  box-shadow: 4px 4px 4px grey;
+}
+
+.thin a {
+  color: #0063a0;
 }
 
 .feather {
@@ -194,6 +206,19 @@ table {
   box-sizing: border-box;
   box-shadow: -1px -2px 3px rgba(0, 0, 0, 0.45);
   background-color: $dark-grey;
+  color: #fff;
+
+  a {
+    color: $light-grey;
+    transition-property: color;
+    transition-duration: .4s;
+    transition-timing-function: ease-out;
+
+  }
+
+  a:hover {
+    color: #fff
+  }
 }
 
 .hdr-wrapper {
@@ -268,6 +293,7 @@ table {
 }
 
 #site-footer {
+  background: $light-grey;
   text-align: center;
   font-size: .9em;
   margin-bottom: 96px;
@@ -667,8 +693,8 @@ hr.post-end {
 .post-nav {
   display: flex;
   justify-content: space-between;
-  margin-top: 1.5em;
-  margin-bottom: 2.5em;
+  margin-top: 0m;
+  margin-bottom: 0em;
   font-size: 1.2em;
 
   a {
